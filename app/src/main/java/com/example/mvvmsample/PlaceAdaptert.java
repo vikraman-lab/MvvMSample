@@ -1,6 +1,7 @@
 package com.example.mvvmsample;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,9 +18,10 @@ public class PlaceAdaptert extends RecyclerView.Adapter<PlaceAdaptert.MyViewHold
     private List<NicePlaceModel> mNicePlaceModelList;
     private Context mContext;
 
-    public PlaceAdaptert(MainActivity mainActivity, List<NicePlaceModel> nicePlaceModelList) {
+    PlaceAdaptert(MainActivity mainActivity, List<NicePlaceModel> nicePlaceModelList) {
         this.mContext=mainActivity;
         this.mNicePlaceModelList=nicePlaceModelList;
+        Log.e("sdasd",""+nicePlaceModelList.toString());
     }
 
     @NonNull
@@ -42,9 +44,9 @@ public class PlaceAdaptert extends RecyclerView.Adapter<PlaceAdaptert.MyViewHold
         return mNicePlaceModelList.size();
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
-        public PlaceItemBinding placeItemBinding;
-        public MyViewHolder(PlaceItemBinding placeItemBinding) {
+    class MyViewHolder extends RecyclerView.ViewHolder {
+        PlaceItemBinding placeItemBinding;
+        MyViewHolder(PlaceItemBinding placeItemBinding) {
             super(placeItemBinding.getRoot());
             this.placeItemBinding=placeItemBinding;
         }
