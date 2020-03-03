@@ -36,7 +36,7 @@ public class PlaceAdaptert extends RecyclerView.Adapter<PlaceAdaptert.MyViewHold
     public void onBindViewHolder(@NonNull PlaceAdaptert.MyViewHolder holder, int position) {
        NicePlaceModel nicePlaceModel=mNicePlaceModelList.get(position);
        holder.placeItemBinding.setNicemodel(nicePlaceModel);
-//dsagggggggggggggggggggggggg
+//dsaggggggggggggggggggggggggd
     }
 
     @Override
