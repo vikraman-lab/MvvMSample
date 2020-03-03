@@ -26,6 +26,7 @@ private List<NicePlaceModel> nicePlaceModelList=new ArrayList<NicePlaceModel>();
     }
 
     private void setAdapter() {
+        //lkjhdkjhk
    /*     NicePlaceModel nicePlaceModel=new NicePlaceModel();
         nicePlaceModel.setArea("kay");
         nicePlaceModel.setName("1234");
